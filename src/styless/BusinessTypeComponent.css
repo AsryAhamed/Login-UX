@@ -1,0 +1,118 @@
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.business-type-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.business-type-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+.business-type-card h1 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.business-type-card p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.type-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.type-card.selected {
+    background: #e0e7ff;
+    border-color: #3b82f6;
+    box-shadow: 0 4px 30px rgba(59, 130, 246, 0.5);
+}
+
+.type-card:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.type-card i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2F688C;
+}
+
+.type-card.selected i {
+    color: #57A1C3 ;
+}
+
+.type-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.type-card.selected p {
+    color: #3b82f6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.skip-button,
+.next-button {
+    background-color: #57A1C3 ;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skip-button {
+    background-color: #57A1C3;
+}
+
+.skip-button:hover,
+.next-button:hover {
+    background-color: #2F688C;
+}

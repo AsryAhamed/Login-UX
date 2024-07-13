@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://orhanergun.net/assets/frontend/default/new/images/bg/bg-image-10.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-options-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.register-options-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.register-options-card h1 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.register-options-card p {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.email-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.send-otp-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-otp-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.send-otp-button:hover:enabled {
+    background-color: #357ae8;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the buttons horizontally */
+    gap: 1rem;
+}
+
+.google-button, .email-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    padding: 15px 32px;
+    text-decoration: none; /* Remove underline */
+}
+
+.google-button {
+    background-color: #57A1C3 ;
+}
+
+.google-button:hover {
+    background-color: #2F688C;
+}
+
+.email-button {
+    background-color: #57A1C3;
+}
+
+.email-button:hover {
+    background-color: #2F688C;
+}
+
+.email-button i, .google-button i {
+    margin-right: 8px;
+}
+
+.terms {
+    margin-top: 1.5rem;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.terms a {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
